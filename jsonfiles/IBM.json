@@ -1,0 +1,1358 @@
+{
+ "query": {
+  "count": 128,
+  "created": "2014-11-30T00:19:39Z",
+  "lang": "en-US",
+  "diagnostics": {
+   "url": [
+    {
+     "execution-start-time": "0",
+     "execution-stop-time": "107",
+     "execution-time": "107",
+     "content": "http://www.datatables.org/yahoo/finance/yahoo.finance.historicaldata.xml"
+    },
+    {
+     "execution-start-time": "110",
+     "execution-stop-time": "379",
+     "execution-time": "269",
+     "content": "http://ichart.finance.yahoo.com/table.csv?g=d&f=2014&e=29&c=2014&b=30&a=4&d=10&s=IBM"
+    },
+    {
+     "execution-start-time": "382",
+     "execution-stop-time": "521",
+     "execution-time": "139",
+     "content": "http://ichart.finance.yahoo.com/table.csv?g=d&f=2014&e=29&c=2014&b=30&a=4&d=10&s=IBM"
+    }
+   ],
+   "publiclyCallable": "true",
+   "cache": [
+    {
+     "execution-start-time": "109",
+     "execution-stop-time": "110",
+     "execution-time": "1",
+     "method": "GET",
+     "type": "MEMCACHED",
+     "content": "7c4e998a06d12a0b0bb215369a34be29"
+    },
+    {
+     "execution-start-time": "381",
+     "execution-stop-time": "382",
+     "execution-time": "1",
+     "method": "GET",
+     "type": "MEMCACHED",
+     "content": "2045e1608f328a72a8f3a5d89324dd62"
+    }
+   ],
+   "query": [
+    {
+     "execution-start-time": "110",
+     "execution-stop-time": "381",
+     "execution-time": "271",
+     "params": "{url=[http://ichart.finance.yahoo.com/table.csv?g=d&f=2014&e=29&c=2014&b=30&a=4&d=10&s=IBM]}",
+     "content": "select * from csv(0,1) where url=@url"
+    },
+    {
+     "execution-start-time": "382",
+     "execution-stop-time": "523",
+     "execution-time": "141",
+     "params": "{columnsNames=[Date,Open,High,Low,Close,Volume,Adj_Close], url=[http://ichart.finance.yahoo.com/table.csv?g=d&f=2014&e=29&c=2014&b=30&a=4&d=10&s=IBM]}",
+     "content": "select * from csv(2,0) where url=@url and columns=@columnsNames"
+    }
+   ],
+   "javascript": {
+    "execution-start-time": "108",
+    "execution-stop-time": "713",
+    "execution-time": "604",
+    "instructions-used": "6347666",
+    "table-name": "yahoo.finance.historicaldata"
+   },
+   "user-time": "716",
+   "service-time": "517",
+   "build-version": "0.2.212"
+  },
+  "results": {
+   "quote": [
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-28",
+     "Open": "162.75",
+     "High": "163.37",
+     "Low": "161.44",
+     "Close": "162.17",
+     "Volume": "2405500",
+     "Adj_Close": "162.17"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-26",
+     "Open": "161.93",
+     "High": "162.10",
+     "Low": "161.01",
+     "Close": "161.95",
+     "Volume": "3966000",
+     "Adj_Close": "161.95"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-25",
+     "Open": "162.65",
+     "High": "163.50",
+     "Low": "161.56",
+     "Close": "161.76",
+     "Volume": "4062300",
+     "Adj_Close": "161.76"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-24",
+     "Open": "161.54",
+     "High": "163.86",
+     "Low": "161.06",
+     "Close": "162.15",
+     "Volume": "6618500",
+     "Adj_Close": "162.15"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-21",
+     "Open": "161.83",
+     "High": "161.95",
+     "Low": "160.75",
+     "Close": "160.92",
+     "Volume": "4076900",
+     "Adj_Close": "160.92"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-20",
+     "Open": "160.95",
+     "High": "161.50",
+     "Low": "159.80",
+     "Close": "160.64",
+     "Volume": "4182200",
+     "Adj_Close": "160.64"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-19",
+     "Open": "162.05",
+     "High": "162.10",
+     "Low": "160.96",
+     "Close": "161.43",
+     "Volume": "3802200",
+     "Adj_Close": "161.43"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-18",
+     "Open": "164.73",
+     "High": "164.75",
+     "Low": "161.89",
+     "Close": "161.89",
+     "Volume": "5410100",
+     "Adj_Close": "161.89"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-17",
+     "Open": "164.16",
+     "High": "164.97",
+     "Low": "163.72",
+     "Close": "164.16",
+     "Volume": "4798900",
+     "Adj_Close": "164.16"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-14",
+     "Open": "162.10",
+     "High": "164.49",
+     "Low": "161.69",
+     "Close": "164.16",
+     "Volume": "4976700",
+     "Adj_Close": "164.16"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-13",
+     "Open": "162.00",
+     "High": "162.80",
+     "Low": "161.80",
+     "Close": "162.79",
+     "Volume": "3239500",
+     "Adj_Close": "162.79"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-12",
+     "Open": "162.28",
+     "High": "163.00",
+     "Low": "161.76",
+     "Close": "161.92",
+     "Volume": "3377600",
+     "Adj_Close": "161.92"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-11",
+     "Open": "163.70",
+     "High": "163.90",
+     "Low": "162.60",
+     "Close": "163.30",
+     "Volume": "3534400",
+     "Adj_Close": "163.30"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-10",
+     "Open": "161.90",
+     "High": "164.47",
+     "Low": "161.61",
+     "Close": "163.49",
+     "Volume": "4958200",
+     "Adj_Close": "163.49"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-07",
+     "Open": "161.42",
+     "High": "162.21",
+     "Low": "160.85",
+     "Close": "162.07",
+     "Volume": "3494800",
+     "Adj_Close": "162.07"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-06",
+     "Open": "161.28",
+     "High": "161.53",
+     "Low": "160.05",
+     "Close": "161.46",
+     "Volume": "4067600",
+     "Adj_Close": "161.46"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-05",
+     "Open": "163.13",
+     "High": "163.54",
+     "Low": "161.56",
+     "Close": "161.82",
+     "Volume": "4104700",
+     "Adj_Close": "160.72"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-04",
+     "Open": "164.34",
+     "High": "164.36",
+     "Low": "162.24",
+     "Close": "162.65",
+     "Volume": "4246900",
+     "Adj_Close": "161.54"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-11-03",
+     "Open": "164.25",
+     "High": "164.54",
+     "Low": "163.38",
+     "Close": "164.36",
+     "Volume": "4688200",
+     "Adj_Close": "163.24"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-31",
+     "Open": "165.48",
+     "High": "165.59",
+     "Low": "163.62",
+     "Close": "164.40",
+     "Volume": "5818000",
+     "Adj_Close": "163.28"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-30",
+     "Open": "163.50",
+     "High": "164.62",
+     "Low": "163.02",
+     "Close": "164.35",
+     "Volume": "3896000",
+     "Adj_Close": "163.23"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-29",
+     "Open": "164.33",
+     "High": "164.62",
+     "Low": "162.76",
+     "Close": "163.46",
+     "Volume": "4739300",
+     "Adj_Close": "162.35"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-28",
+     "Open": "162.00",
+     "High": "163.60",
+     "Low": "161.80",
+     "Close": "163.60",
+     "Volume": "7895300",
+     "Adj_Close": "162.49"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-27",
+     "Open": "162.00",
+     "High": "162.91",
+     "Low": "161.81",
+     "Close": "161.87",
+     "Volume": "4989100",
+     "Adj_Close": "160.77"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-24",
+     "Open": "162.08",
+     "High": "162.44",
+     "Low": "161.45",
+     "Close": "162.08",
+     "Volume": "6652100",
+     "Adj_Close": "160.98"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-23",
+     "Open": "162.12",
+     "High": "162.83",
+     "Low": "161.54",
+     "Close": "162.18",
+     "Volume": "7599400",
+     "Adj_Close": "161.08"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-22",
+     "Open": "162.41",
+     "High": "165.41",
+     "Low": "161.10",
+     "Close": "161.79",
+     "Volume": "11084800",
+     "Adj_Close": "160.69"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-21",
+     "Open": "166.40",
+     "High": "166.68",
+     "Low": "161.68",
+     "Close": "163.23",
+     "Volume": "20949800",
+     "Adj_Close": "162.12"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-20",
+     "Open": "166.85",
+     "High": "170.33",
+     "Low": "166.69",
+     "Close": "169.10",
+     "Volume": "23416500",
+     "Adj_Close": "167.95"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-17",
+     "Open": "181.24",
+     "High": "182.84",
+     "Low": "180.22",
+     "Close": "182.05",
+     "Volume": "4350200",
+     "Adj_Close": "180.81"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-16",
+     "Open": "179.80",
+     "High": "181.48",
+     "Low": "178.69",
+     "Close": "179.84",
+     "Volume": "5578600",
+     "Adj_Close": "178.62"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-15",
+     "Open": "182.46",
+     "High": "183.79",
+     "Low": "178.75",
+     "Close": "181.75",
+     "Volume": "6895800",
+     "Adj_Close": "180.51"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-14",
+     "Open": "184.89",
+     "High": "185.72",
+     "Low": "183.59",
+     "Close": "183.80",
+     "Volume": "3924700",
+     "Adj_Close": "182.55"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-13",
+     "Open": "185.49",
+     "High": "186.65",
+     "Low": "183.42",
+     "Close": "183.52",
+     "Volume": "3596700",
+     "Adj_Close": "182.27"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-10",
+     "Open": "185.86",
+     "High": "187.74",
+     "Low": "185.10",
+     "Close": "185.93",
+     "Volume": "5090200",
+     "Adj_Close": "184.67"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-09",
+     "Open": "189.12",
+     "High": "189.50",
+     "Low": "186.09",
+     "Close": "186.42",
+     "Volume": "2625400",
+     "Adj_Close": "185.15"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-08",
+     "Open": "185.97",
+     "High": "189.60",
+     "Low": "185.61",
+     "Close": "189.36",
+     "Volume": "2984800",
+     "Adj_Close": "188.07"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-07",
+     "Open": "187.77",
+     "High": "188.12",
+     "Low": "185.54",
+     "Close": "185.71",
+     "Volume": "2991300",
+     "Adj_Close": "184.45"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-06",
+     "Open": "189.69",
+     "High": "190.89",
+     "Low": "188.71",
+     "Close": "189.04",
+     "Volume": "2099500",
+     "Adj_Close": "187.75"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-03",
+     "Open": "188.11",
+     "High": "189.37",
+     "Low": "187.56",
+     "Close": "188.67",
+     "Volume": "3071500",
+     "Adj_Close": "187.39"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-02",
+     "Open": "187.66",
+     "High": "187.78",
+     "Low": "186.24",
+     "Close": "186.91",
+     "Volume": "2283100",
+     "Adj_Close": "185.64"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-10-01",
+     "Open": "189.91",
+     "High": "190.40",
+     "Low": "186.79",
+     "Close": "187.17",
+     "Volume": "3723200",
+     "Adj_Close": "185.90"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-30",
+     "Open": "189.64",
+     "High": "190.85",
+     "Low": "189.15",
+     "Close": "189.83",
+     "Volume": "2932600",
+     "Adj_Close": "188.54"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-29",
+     "Open": "188.51",
+     "High": "189.96",
+     "Low": "188.12",
+     "Close": "189.64",
+     "Volume": "2336300",
+     "Adj_Close": "188.35"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-26",
+     "Open": "188.93",
+     "High": "190.33",
+     "Low": "188.61",
+     "Close": "190.06",
+     "Volume": "2493900",
+     "Adj_Close": "188.77"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-25",
+     "Open": "192.05",
+     "High": "192.50",
+     "Low": "188.97",
+     "Close": "189.01",
+     "Volume": "4151400",
+     "Adj_Close": "187.73"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-24",
+     "Open": "191.00",
+     "High": "192.45",
+     "Low": "189.88",
+     "Close": "192.31",
+     "Volume": "3082600",
+     "Adj_Close": "191.00"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-23",
+     "Open": "192.75",
+     "High": "193.07",
+     "Low": "191.52",
+     "Close": "191.62",
+     "Volume": "3301800",
+     "Adj_Close": "190.32"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-22",
+     "Open": "193.72",
+     "High": "194.14",
+     "Low": "192.63",
+     "Close": "193.11",
+     "Volume": "3318000",
+     "Adj_Close": "191.80"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-19",
+     "Open": "194.54",
+     "High": "195.00",
+     "Low": "193.19",
+     "Close": "194.00",
+     "Volume": "8852000",
+     "Adj_Close": "192.68"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-18",
+     "Open": "192.79",
+     "High": "194.13",
+     "Low": "192.71",
+     "Close": "193.75",
+     "Volume": "2963300",
+     "Adj_Close": "192.43"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-17",
+     "Open": "193.22",
+     "High": "193.64",
+     "Low": "192.30",
+     "Close": "192.80",
+     "Volume": "3210800",
+     "Adj_Close": "191.49"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-16",
+     "Open": "191.25",
+     "High": "193.57",
+     "Low": "190.82",
+     "Close": "192.96",
+     "Volume": "2561500",
+     "Adj_Close": "191.65"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-15",
+     "Open": "191.42",
+     "High": "192.49",
+     "Low": "190.58",
+     "Close": "191.81",
+     "Volume": "2456400",
+     "Adj_Close": "190.51"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-12",
+     "Open": "191.47",
+     "High": "191.60",
+     "Low": "190.57",
+     "Close": "191.28",
+     "Volume": "2901000",
+     "Adj_Close": "189.98"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-11",
+     "Open": "191.08",
+     "High": "192.78",
+     "Low": "190.12",
+     "Close": "191.72",
+     "Volume": "2298500",
+     "Adj_Close": "190.42"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-10",
+     "Open": "190.12",
+     "High": "192.15",
+     "Low": "190.10",
+     "Close": "191.54",
+     "Volume": "2764000",
+     "Adj_Close": "190.24"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-09",
+     "Open": "190.34",
+     "High": "190.74",
+     "Low": "189.78",
+     "Close": "189.99",
+     "Volume": "2403600",
+     "Adj_Close": "188.70"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-08",
+     "Open": "190.75",
+     "High": "191.20",
+     "Low": "189.51",
+     "Close": "190.14",
+     "Volume": "2524200",
+     "Adj_Close": "188.85"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-05",
+     "Open": "190.53",
+     "High": "191.75",
+     "Low": "190.09",
+     "Close": "191.20",
+     "Volume": "2260200",
+     "Adj_Close": "189.90"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-04",
+     "Open": "191.69",
+     "High": "192.69",
+     "Low": "190.06",
+     "Close": "190.68",
+     "Volume": "2865000",
+     "Adj_Close": "189.38"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-03",
+     "Open": "192.39",
+     "High": "192.95",
+     "Low": "191.86",
+     "Close": "191.95",
+     "Volume": "1822800",
+     "Adj_Close": "190.65"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-09-02",
+     "Open": "192.68",
+     "High": "192.97",
+     "Low": "190.93",
+     "Close": "191.56",
+     "Volume": "2679700",
+     "Adj_Close": "190.26"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-29",
+     "Open": "192.28",
+     "High": "192.75",
+     "Low": "191.14",
+     "Close": "192.30",
+     "Volume": "2909400",
+     "Adj_Close": "190.99"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-28",
+     "Open": "191.47",
+     "High": "192.30",
+     "Low": "190.66",
+     "Close": "192.00",
+     "Volume": "1503600",
+     "Adj_Close": "190.69"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-27",
+     "Open": "193.03",
+     "High": "194.13",
+     "Low": "191.56",
+     "Close": "192.25",
+     "Volume": "2190200",
+     "Adj_Close": "190.94"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-26",
+     "Open": "191.02",
+     "High": "193.53",
+     "Low": "191.02",
+     "Close": "192.99",
+     "Volume": "3175400",
+     "Adj_Close": "191.68"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-25",
+     "Open": "191.39",
+     "High": "191.81",
+     "Low": "190.71",
+     "Close": "191.16",
+     "Volume": "1723600",
+     "Adj_Close": "189.86"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-22",
+     "Open": "190.77",
+     "High": "191.88",
+     "Low": "190.29",
+     "Close": "190.41",
+     "Volume": "1940300",
+     "Adj_Close": "189.12"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-21",
+     "Open": "190.90",
+     "High": "192.07",
+     "Low": "190.50",
+     "Close": "191.23",
+     "Volume": "2496500",
+     "Adj_Close": "189.93"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-20",
+     "Open": "189.86",
+     "High": "190.39",
+     "Low": "189.25",
+     "Close": "190.10",
+     "Volume": "2177600",
+     "Adj_Close": "188.81"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-19",
+     "Open": "190.04",
+     "High": "190.25",
+     "Low": "189.36",
+     "Close": "190.07",
+     "Volume": "2040100",
+     "Adj_Close": "188.78"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-18",
+     "Open": "188.10",
+     "High": "189.81",
+     "Low": "187.76",
+     "Close": "189.36",
+     "Volume": "2420300",
+     "Adj_Close": "188.07"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-15",
+     "Open": "187.85",
+     "High": "188.88",
+     "Low": "186.79",
+     "Close": "187.38",
+     "Volume": "2814800",
+     "Adj_Close": "186.11"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-14",
+     "Open": "187.57",
+     "High": "188.17",
+     "Low": "186.93",
+     "Close": "187.88",
+     "Volume": "1929500",
+     "Adj_Close": "186.60"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-13",
+     "Open": "188.00",
+     "High": "188.48",
+     "Low": "187.37",
+     "Close": "187.95",
+     "Volume": "1797000",
+     "Adj_Close": "186.67"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-12",
+     "Open": "187.45",
+     "High": "188.69",
+     "Low": "186.81",
+     "Close": "187.34",
+     "Volume": "1858600",
+     "Adj_Close": "186.07"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-11",
+     "Open": "187.81",
+     "High": "188.36",
+     "Low": "186.28",
+     "Close": "187.47",
+     "Volume": "2527200",
+     "Adj_Close": "186.20"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-08",
+     "Open": "184.40",
+     "High": "186.67",
+     "Low": "183.58",
+     "Close": "186.63",
+     "Volume": "2781500",
+     "Adj_Close": "185.36"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-07",
+     "Open": "186.64",
+     "High": "186.68",
+     "Low": "183.58",
+     "Close": "184.30",
+     "Volume": "2708600",
+     "Adj_Close": "183.05"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-06",
+     "Open": "185.36",
+     "High": "186.88",
+     "Low": "184.44",
+     "Close": "185.97",
+     "Volume": "3847000",
+     "Adj_Close": "184.71"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-05",
+     "Open": "188.75",
+     "High": "189.20",
+     "Low": "186.44",
+     "Close": "187.10",
+     "Volume": "3307900",
+     "Adj_Close": "184.74"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-04",
+     "Open": "189.35",
+     "High": "189.95",
+     "Low": "188.60",
+     "Close": "189.64",
+     "Volume": "2125900",
+     "Adj_Close": "187.24"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-08-01",
+     "Open": "190.50",
+     "High": "191.50",
+     "Low": "188.86",
+     "Close": "189.15",
+     "Volume": "5181100",
+     "Adj_Close": "186.76"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-31",
+     "Open": "192.84",
+     "High": "194.29",
+     "Low": "191.54",
+     "Close": "191.67",
+     "Volume": "4207500",
+     "Adj_Close": "189.25"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-30",
+     "Open": "195.20",
+     "High": "195.99",
+     "Low": "192.90",
+     "Close": "194.00",
+     "Volume": "3943800",
+     "Adj_Close": "191.55"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-29",
+     "Open": "195.30",
+     "High": "195.89",
+     "Low": "194.54",
+     "Close": "194.57",
+     "Volume": "3264100",
+     "Adj_Close": "192.11"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-28",
+     "Open": "194.30",
+     "High": "196.40",
+     "Low": "193.65",
+     "Close": "195.78",
+     "Volume": "3242400",
+     "Adj_Close": "193.31"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-25",
+     "Open": "195.30",
+     "High": "195.90",
+     "Low": "193.79",
+     "Close": "194.40",
+     "Volume": "3376400",
+     "Adj_Close": "191.94"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-24",
+     "Open": "193.95",
+     "High": "195.62",
+     "Low": "193.75",
+     "Close": "195.24",
+     "Volume": "3612700",
+     "Adj_Close": "192.77"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-23",
+     "Open": "194.11",
+     "High": "194.90",
+     "Low": "193.57",
+     "Close": "193.63",
+     "Volume": "3584200",
+     "Adj_Close": "191.18"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-22",
+     "Open": "191.59",
+     "High": "194.72",
+     "Low": "191.56",
+     "Close": "194.09",
+     "Volume": "4853000",
+     "Adj_Close": "191.64"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-21",
+     "Open": "191.30",
+     "High": "191.70",
+     "Low": "189.25",
+     "Close": "190.85",
+     "Volume": "4154400",
+     "Adj_Close": "188.44"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-18",
+     "Open": "191.96",
+     "High": "193.44",
+     "Low": "190.00",
+     "Close": "192.50",
+     "Volume": "8166400",
+     "Adj_Close": "190.07"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-17",
+     "Open": "192.36",
+     "High": "195.95",
+     "Low": "192.00",
+     "Close": "192.49",
+     "Volume": "8872300",
+     "Adj_Close": "190.06"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-16",
+     "Open": "192.24",
+     "High": "193.36",
+     "Low": "190.76",
+     "Close": "192.36",
+     "Volume": "7812600",
+     "Adj_Close": "189.93"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-15",
+     "Open": "189.54",
+     "High": "190.08",
+     "Low": "188.21",
+     "Close": "188.49",
+     "Volume": "4864700",
+     "Adj_Close": "186.11"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-14",
+     "Open": "188.55",
+     "High": "190.44",
+     "Low": "188.53",
+     "Close": "189.86",
+     "Volume": "4501100",
+     "Adj_Close": "187.46"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-11",
+     "Open": "187.73",
+     "High": "188.35",
+     "Low": "186.71",
+     "Close": "188.00",
+     "Volume": "2402500",
+     "Adj_Close": "185.62"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-10",
+     "Open": "186.44",
+     "High": "188.05",
+     "Low": "186.21",
+     "Close": "187.70",
+     "Volume": "3177800",
+     "Adj_Close": "185.33"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-09",
+     "Open": "187.68",
+     "High": "188.90",
+     "Low": "186.89",
+     "Close": "188.42",
+     "Volume": "3309600",
+     "Adj_Close": "186.04"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-08",
+     "Open": "187.65",
+     "High": "188.08",
+     "Low": "186.37",
+     "Close": "187.22",
+     "Volume": "3135100",
+     "Adj_Close": "184.85"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-07",
+     "Open": "187.61",
+     "High": "188.27",
+     "Low": "187.44",
+     "Close": "188.04",
+     "Volume": "2958700",
+     "Adj_Close": "185.66"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-03",
+     "Open": "188.39",
+     "High": "188.81",
+     "Low": "187.35",
+     "Close": "188.53",
+     "Volume": "2422400",
+     "Adj_Close": "186.15"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-02",
+     "Open": "186.34",
+     "High": "188.99",
+     "Low": "186.17",
+     "Close": "188.39",
+     "Volume": "5093000",
+     "Adj_Close": "186.01"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-07-01",
+     "Open": "181.70",
+     "High": "187.27",
+     "Low": "181.70",
+     "Close": "186.35",
+     "Volume": "6643100",
+     "Adj_Close": "184.00"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-30",
+     "Open": "181.33",
+     "High": "181.93",
+     "Low": "180.26",
+     "Close": "181.27",
+     "Volume": "4223800",
+     "Adj_Close": "178.98"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-27",
+     "Open": "179.77",
+     "High": "182.46",
+     "Low": "179.66",
+     "Close": "181.71",
+     "Volume": "4575500",
+     "Adj_Close": "179.41"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-26",
+     "Open": "180.87",
+     "High": "181.37",
+     "Low": "179.27",
+     "Close": "180.37",
+     "Volume": "3258500",
+     "Adj_Close": "178.09"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-25",
+     "Open": "180.25",
+     "High": "180.97",
+     "Low": "180.06",
+     "Close": "180.72",
+     "Volume": "2762800",
+     "Adj_Close": "178.44"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-24",
+     "Open": "181.50",
+     "High": "183.00",
+     "Low": "180.65",
+     "Close": "180.88",
+     "Volume": "3875400",
+     "Adj_Close": "178.59"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-23",
+     "Open": "181.92",
+     "High": "182.25",
+     "Low": "181.00",
+     "Close": "182.14",
+     "Volume": "3231700",
+     "Adj_Close": "179.84"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-20",
+     "Open": "182.59",
+     "High": "182.67",
+     "Low": "181.40",
+     "Close": "181.55",
+     "Volume": "10686800",
+     "Adj_Close": "179.26"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-19",
+     "Open": "184.12",
+     "High": "184.47",
+     "Low": "182.36",
+     "Close": "182.82",
+     "Volume": "3551100",
+     "Adj_Close": "180.51"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-18",
+     "Open": "182.04",
+     "High": "183.61",
+     "Low": "181.79",
+     "Close": "183.60",
+     "Volume": "3931800",
+     "Adj_Close": "181.28"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-17",
+     "Open": "181.90",
+     "High": "182.81",
+     "Low": "181.56",
+     "Close": "182.26",
+     "Volume": "2460900",
+     "Adj_Close": "179.96"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-16",
+     "Open": "182.40",
+     "High": "182.71",
+     "Low": "181.24",
+     "Close": "182.35",
+     "Volume": "3556200",
+     "Adj_Close": "180.05"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-13",
+     "Open": "182.00",
+     "High": "183.00",
+     "Low": "181.52",
+     "Close": "182.56",
+     "Volume": "2773600",
+     "Adj_Close": "180.25"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-12",
+     "Open": "182.48",
+     "High": "182.55",
+     "Low": "180.91",
+     "Close": "181.22",
+     "Volume": "4425300",
+     "Adj_Close": "178.93"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-11",
+     "Open": "183.61",
+     "High": "184.20",
+     "Low": "182.01",
+     "Close": "182.25",
+     "Volume": "4061700",
+     "Adj_Close": "179.95"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-10",
+     "Open": "186.20",
+     "High": "186.22",
+     "Low": "183.82",
+     "Close": "184.29",
+     "Volume": "4154900",
+     "Adj_Close": "181.96"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-09",
+     "Open": "186.22",
+     "High": "187.64",
+     "Low": "185.96",
+     "Close": "186.22",
+     "Volume": "2728400",
+     "Adj_Close": "183.87"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-06",
+     "Open": "186.47",
+     "High": "187.65",
+     "Low": "185.90",
+     "Close": "186.37",
+     "Volume": "3296700",
+     "Adj_Close": "184.01"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-05",
+     "Open": "184.66",
+     "High": "186.09",
+     "Low": "183.92",
+     "Close": "185.98",
+     "Volume": "2852200",
+     "Adj_Close": "183.63"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-04",
+     "Open": "184.71",
+     "High": "185.45",
+     "Low": "184.20",
+     "Close": "184.51",
+     "Volume": "2376800",
+     "Adj_Close": "182.18"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-03",
+     "Open": "185.55",
+     "High": "185.76",
+     "Low": "184.12",
+     "Close": "184.37",
+     "Volume": "2517100",
+     "Adj_Close": "182.04"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-06-02",
+     "Open": "184.76",
+     "High": "186.28",
+     "Low": "184.67",
+     "Close": "185.69",
+     "Volume": "3200500",
+     "Adj_Close": "183.34"
+    },
+    {
+     "Symbol": "IBM",
+     "Date": "2014-05-30",
+     "Open": "183.38",
+     "High": "184.57",
+     "Low": "182.49",
+     "Close": "184.36",
+     "Volume": "4620500",
+     "Adj_Close": "182.03"
+    }
+   ]
+  }
+ }
+}
